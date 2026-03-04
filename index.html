@@ -1,37 +1,70 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AGELGIL Authentic Ethiopian Catering | Luxury Experience</title>
+<title>Agelgil Authentic Ethiopian Catering | Ordering</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
-/* ====== COLORS ====== */
 :root{
-  --gold:#e90822;
+  --gold:#d4af37;
   --black:#0e0e0e;
   --white:#ffffff;
   --gray:#f6f6f6;
 }
-
-/* ====== GLOBAL ====== */
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:'Inter',sans-serif;
-  background:white;
-  color:var(--black);
-}
-h1,h2,h3{
-  font-family:'Playfair Display',serif;
+#reviews {
+  padding: 100px 20px;
+  /* background: linear-gradient(135deg,#f5f0f0,#7c6c6c); */
+  text-align: center;
 }
 
-/* ====== HEADER ====== */
+#reviews h2 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.elfsight-app-d849c705-dabb-4220-b3c3-531a6249e71c {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.review-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: white;
+  color: #df1010;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.review-btn:hover {
+  background: #f5f5f5;
+  transform: scale(1.05);
+}
+/* .price-options {
+  margin: 5px 0;
+  text-align: right;
+} */
+
+/* .price-options label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+} */
+
+/* .price-options input {
+  margin-right: 8px;
+} */
 header{
-  background:linear-gradient(90deg,#d47171,#c5abab);
+  background:linear-gradient(90deg,#cc8f8f,#7c6c6c);
   color:white;
   padding:20px;
   text-align:center;
@@ -47,10 +80,9 @@ header a{
 }
 header a:hover{color:var(--gold)}
 
-/* ====== HERO SLIDER ====== */
 .hero-slider{
   position:relative;
-  height:90vh;
+  height:70vh;
   overflow:hidden;
 }
 .hero-slide{
@@ -76,100 +108,122 @@ header a:hover{color:var(--gold)}
   color:white;
 }
 .hero-content h1{
-  font-size:60px;
+  font-size:42px;
 }
 .btn{
-  background:linear-gradient(135deg,#c9a227,#f5d76e);
-  padding:15px 35px;
+  background:linear-gradient(135deg,#b9b8b2,#f5d76e);
+  padding:12px 28px;
   border-radius:50px;
   text-decoration:none;
   color:black;
   font-weight:800;
   transition:.4s;
+  display:inline-block;
 }
-.btn:hover{transform:scale(1.08)}
+.btn:hover{transform:scale(1.05)}
 
-/* ====== SECTIONS ====== */
 section{
-  padding:100px 20px;
+  padding:60px 20px;
 }
 .container{
-  max-width:1200px;
+  max-width:1100px;
   margin:auto;
 }
 
-/* ====== MENU ====== */
+/* MENU CARDS */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
 .card{
-  background:white;
-  border-radius:20px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  background:rgb(226, 195, 195);
   padding:20px;
-  transition:.4s;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
-.card:hover{transform:translateY(-8px)}
 .card img{
   width:100%;
   height:180px;
   object-fit:cover;
-  border-radius:12px;
+  border-radius:10px;
+}
+.card button{
+  background:black;
+  color:white;
+  padding:10px 15px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+.card button:hover{
+  background:#c00e0e;
 }
 
-/* ====== CART ====== */
+/* CART */
 .cart{
-  background:var(--gray);
-  padding:25px;
-  border-radius:20px;
+  background:rgb(179, 161, 161);
+  padding:20px;
+  border-radius:15px;
   margin-top:30px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 .total{
+  font-weight:bold;
   font-size:20px;
-  font-weight:900;
+  margin-top:10px;
 }
 
-/* ====== INSTAGRAM STYLE GALLERY ====== */
+/* FORM */
+input{
+  width:100%;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:80px;
+  border:1px solid #ccc;
+}
+
+/* GALLERY */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-  gap:5px;
+  gap:51px;
 }
 .gallery img{
   width:100%;
+  background:rgb(179, 161, 161);
+  padding:10px;
+  border-radius:10px;
   height:220px;
   object-fit:cover;
-  transition:.4s;
   cursor:pointer;
+  transition:.4s;
 }
 .gallery img:hover{transform:scale(1.05)}
 
-
-/* ====== VIDEO GALLERY ====== */
+/* VIDEO */
 .video-grid{
   display:grid;
+  background:rgb(240, 237, 237);
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:40px;
-  align-items:center;
+  gap:15px;
   justify-items:center;
 }
-
 .video-grid video{
   width:100%;
+  background:rgb(214, 9, 9);
   max-width:420px;
-  height:500px;           /* makes all videos same height */
-  object-fit:cover;       /* keeps it clean */
+  height:320px;
+  object-fit:cover;
   border-radius:25px;
   box-shadow:0 20px 50px rgba(0,0,0,0.25);
   transition:0.4s ease;
 }
-
 .video-grid video:hover{
   transform:scale(1.05);
 }
-/* ====== LIGHTBOX ====== */
+
+/* LIGHTBOX */
 .lightbox{
   display:none;
   position:fixed;
@@ -185,37 +239,109 @@ section{
   border-radius:15px;
 }
 
-/* ====== FOOTER ====== */
-footer{
-  background:var(--black);
-  color:white;
-  text-align:center;
-  padding:40px;
+/* REVIEWS */
+/* .review-container{
+  position:relative;
+  min-height:150px;
 }
-footer a{
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:800;
+.review{
+  position:absolute;
+  width:100%;
+  opacity:0;
+  transition:opacity 0.8s ease;
 }
-footer a:hover{color:var(--gold)}
-.slider{
-  overflow:hidden;
-  background:var(--gray);
-  padding:40px;
-  border-radius:20px;
-  text-align:center;
+.review.active{
+  opacity:1;
+  position:relative;
+} */
+.stars{
+  color:var(--gold);
+  font-size:20px;
+  margin:10px 0;
+}
+button.prev,
+button.next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:var(--gold);
+  color:#000;
+  border:none;
+  width:45px;
+  height:45px;
+  cursor:pointer;
+  border-radius:50%;
+  font-weight:bold;
+}
+button.prev{ left:10px; }
+button.next{ right:10px; }
+.dots{
+  margin-top:20px;
+}
+.dot{
+  height:12px;
+  width:12px;
+  margin:0 5px;
+  background:#ccc;
+  border-radius:50%;
+  display:inline-block;
+  cursor:pointer;
+  transition:0.3s;
+}
+.dot.active{
+  background:var(--gold);
 }
 
-.slides{
+/* FOOTER */
+.luxury-footer{
+  background:linear-gradient(135deg,#e0dbdb,#ddd1d1);
+  padding:60px 20px 40px;
+  text-align:center;
+}
+.luxury-social{
+  max-width:1100px;
+  background:linear-gradient(135deg,#e7dede,#e5d7d7);
+  margin:0 auto;
+  padding:40px 30px;
+  border-radius:25px;
+}
+.luxury-social h2{
+  font-size:30px;
+  color:var(--gold);
+  margin-bottom:30px;
+  letter-spacing:3px;
+}
+.social-container{
   display:flex;
-  transition:transform 0.6s ease;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+.social-container a{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  border:2px solid var(--gold);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--gold);
+  font-size:24px;
+  text-decoration:none;
+  transition:.4s;
+  box-shadow:0 0 15px rgba(231,231,229,0.25);
+}
+.social-container a:hover{
+  background:var(--gold);
+  color:#b41212;
+  transform:translateY(-6px);
+  box-shadow:0 0 25px rgba(212,175,55,0.8);
+}
+.footer-bottom{
+  margin-top:20px;
 }
 
-.slide{
-  min-width:100%;
-}
-/* ====== WHATSAPP ====== */
+/* WHATSAPP FLOAT */
 .whatsapp{
   position:fixed;
   bottom:20px;
@@ -229,191 +355,510 @@ footer a:hover{color:var(--gold)}
 }
 
 @media(max-width:600px){
-  .hero-content h1{font-size:32px}
+  .hero-content h1{font-size:28px}
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>AGELGIL Authentic Ethiopian Catering</h1>
-<a href="#menu">Menu</a>
-<a href="#gallery">Gallery</a>
-<a href="#videos">Videos</a>
- <a href="#contact">Contact</a>
-<a href="#cart">Cart</a>
-
+  <h1>Agelgil Authentic Ethiopian Catering</h1>
+  <a href="#menu-plates">Per-Plate</a>
+  <a href="#menu-trays">Catering Trays</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#videos">Videos</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#checkout">Order</a>
 </header>
 
-<!-- ===== HERO SLIDER ===== -->
-
+<!-- HERO -->
 <section class="hero-slider">
-
-<div class="hero-slide active">
-<img src="images/alicha.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/atkilt.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/coffee.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/combo.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/doro.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/hero.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/injera.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/kik.jpg">
-</div>
-
-<div class="hero-slide active">
-<img src="images/kitfo.jpg">
-</div>
-
-<div class="hero-slide">
-<img src="images/misir.jpg">
-</div>
-
-<div class="hero-slide">
-<img src="images/shiro.jpg">
-
-<div class="hero-slide active">
-<img src="images/tibs.jpg">
-</div>
-
-</div>
-
-<div class="hero-content">
-<h1>Luxury Ethiopian Catering</h1>
-<a href="#menu" class="btn">Explore Menu</a>
-</div>
-
+  <div class="hero-slide active"><img src="images/Alicha Beef.jpeg"></div>
+  <div class="hero-slide"><img src="images/Ayib (Ethiopian Fresh Cheese).jpg"></div>
+  <div class="hero-slide"><img src="images/ayib with Gomen.jpg"></div>
+  <div class="hero-slide"><img src="images/Gomen with Beef.jpeg"></div>
+  <div class="hero-slide"><img src="images/Beef Red Stew (Sega Wat).jpeg"></div>
+  <div class="hero-slide"><img src="images/coffee.jpg"></div>
+  <div class="hero-slide active"><img src="images/download (6).jpeg"></div>
+  <div class="hero-slide"><img src="images/Gomen ketfo.jpeg"></div>
+  <div class="hero-slide"><img src="images/Gomen with Beef (2).jpeg"></div>
+  <div class="hero-slide"><img src="images/Gomen with Beef.jpeg"></div>
+  <div class="hero-slide"><img src="images/hero.jpg"></div>
+  <div class="hero-slide"><img src="images/Kik Alicha.jpeg"></div>
+<!-- <div class="hero-slide active"><img src="images/Kik Wat.jpeg"></div> -->
+  <div class="hero-slide"><img src="images/Minchet (Spiced Ground Beef).jpeg"></div>
+  <div class="hero-slide"><img src="images/Red Lentil Stew (Misir Wat).jpeg"></div>
+  <div class="hero-slide"><img src="images/sddefault.jpg"></div>
+  <div class="hero-slide"><img src="images/Vegan Gomen.jpeg"></div>
+  <div class="hero-slide"><img src="images/Vegetable Rice (2).jpeg"></div>
+  <div class="hero-content">
+    <h1>Luxury Ethiopian Catering Experience</h1>
+    <a href="#menu-plates" class="btn">Start Your Order</a>
+  </div>
 </section>
 
 <div class="container">
-  
 
-<!-- ===== MENU ===== -->
+<!-- PER-PLATE MENU -->
+<section id="menu-plates">
+  <h2>Per-Plate Menu</h2>
 
-<section id="menu">
-<h2>Main Menu</h2>
+  <div class="grid">
 
-<div class="grid">
+    <div class="card">
+      <img src="images/Lentil Wat.jpeg" alt="Kik Alicha">
+      <h3>Lentil Wat</h3>
+      <p>Mild lentil stew (vegan/fasting).</p>
+      <p><strong>$25</strong> per plate</p>
+      <button onclick="addToCart('Kik Alicha (plate)',25)">Add to Cart</button>
+    </div>
 
-<div class="card">
-<img src="images/alicha.jpg">
-<h3>Alicha</h3>
-<p>$170</p>
-<button onclick="addToCart('Alicha',170)">Add to Cart</button>
-</div>
+    <div class="card">
+      <img src="images/Red Lentil Stew (Misir Wat).jpeg" alt="Kik Alicha">
+      <h3> Red Lentil Stew (Misir Wat)</h3>
+      <p>Vegan/fasting option made with red lentils.</p>
+      <p><strong>$25</strong> per plate</p>
+      <button onclick="addToCart('Kik Alicha (plate)',25)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Kik Alicha.jpeg" alt="Kik Alicha">
+      <h3>Kik Alicha</h3>
+      <p>Mild split pea stew,(vegan/fasting).</p>
+      <p><strong>$25</strong> per plate</p>
+      <button onclick="addToCart('Kik Alicha (plate)',25)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Alicha Beef.jpeg" alt="Kik Alicha">
+      <h3>Alicha Beef</h3>
+      <p>Tender beef cooked in a mild yellow sauce.</p>
+      <p><strong>$25</strong> per plate</p>
+      <button onclick="addToCart('Kik Alicha (plate)',25)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Gomen with Beef.jpeg" alt="Kik Alicha">
+      <h3>Gomen with Beef</h3>
+      <p>Collard greens sautéed and cooked with beef.</p>
+      <p><strong>$25</strong> per plate</p>
+      <button onclick="addToCart('Kik Alicha (plate)',25)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Vegan Gomen.jpeg" alt="Kik Alicha">
+      <h3>Vegan Gomen</h3>
+      <p>Collard greens cooked with spices and oil (no meat).</p>
+      <p><strong>$25</strong> per plate</p>
+      <button onclick="addToCart('Kik Alicha (plate)',25)">Add to Cart</button>
+    </div>
 
-<div class="card">
-<img src="images/atkilt.jpg">
-<h3>Atkilt</h3>
-<p>$170</p>
-<button onclick="addToCart('Atkilt',170)">Add to Cart</button>
-</div>
+    <div class="card">
+      <img src="images/Beef Red Stew (Sega Wat).jpeg" alt="Sega Wat">
+      <h3>Sega Wat</h3>
+      <p>Beef red stew with berbere.</p>
+      <p><strong>$30</strong> per plate</p>
+      <button onclick="addToCart('Sega Wat (plate)',30)">Add to Cart</button>
+    </div>
 
-<div class="card">
-<img src="images/coffee.jpg">
-<h3>Coffee</h3>
-<p>$170</p>
-<button onclick="addToCart('Coffee',170)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/combo.jpg">
-<h3>Combo</h3>
-<p>$170</p>
-<button onclick="addToCart('Combo',170)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/doro.jpg">
-<h3>Doro Wot</h3>
-<p>$170</p>
-<button onclick="addToCart('Doro Wot',170)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/gomen.jpg">
-<h3>Gomen</h3>
-<p>$170</p>
-<button onclick="addToCart('gomen',170)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/injera.jpg">
-<h3>Injera</h3>
-<p>$170</p>
-<button onclick="addToCart('Injera',170)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/kik.jpg">
-<h3>Kik</h3>
-<p>$170</p>
-<button onclick="addToCart('kik',170)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/kitfo.jpg">
-<h3>Kitfo</h3>
-<p>$110</p>
-<button onclick="addToCart('Kitfo',110)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/misir.jpg">
-<h3>Misir</h3>
-<p>$210</p>
-<button onclick="addToCart('Misir',210)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/shiro.jpg">
-<h3>Shiro</h3>
-<p>$210</p>
-<button onclick="addToCart('Shiro',210)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/tibs.jpg">
-<h3>Tibs</h3>
-<p>$210</p>
-<button onclick="addToCart('Tibs',210)">Add to Cart</button>
-</div>
-
-<div class="card">
-<img src="images/veggie.jpg">
-<h3>VggieS</h3>
-<p>$210</p>
-<button onclick="addToCart('veggie',210)">Add to Cart</button>
-</div>
-
-</div>
+    <div class="card">
+      <img src="images/Vegetable Rice (2).jpeg" alt="Gomen with Beef">
+      <h3>Vegetable Rice</h3>
+      <p>Seasoned rice cooked with carrots, onions, and mixed vegetables. Vegan option.</p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Minchet (Spiced Ground Beef).jpeg " alt="Gomen with Beef">
+      <h3> Minchet</h3>
+      <p>Spiced ground beef stew cooked with Ethiopian herbs and berbere. Served with injera. </p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Ayib with Gomen  አይብ ከጎመን.webp " alt="Gomen with Beef">
+      <h3>Ayib with Gomen  አይብ ከጎመን </h3>
+      <p>Ayib (Ethiopian cottage cheese) served over Gomen (collard greens)</p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Ayib (Ethiopian Fresh Cheese).jpg " alt="Gomen with Beef">
+      <h3>Ayib (Ethiopian Fresh Cheese) አይብ </h3>
+      <p>Fresh homemade Ethiopian cottage cheese. Light, creamy, and slightly tangy. </p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div>
+    <!-- <div class="card">
+      <img src="images/Ayib with haf.jpg " alt="Gomen with Beef">
+      <h3> </h3>
+      <p>Ayib (Ethiopian cottage cheese) served over Gomen (collard greens) </p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div> -->
+    <div class="card">
+      <img src="images/Ayib with haf.jpg " alt="Gomen with Beef">
+      <h3>Ayib with Gomen and Ayib Fresh  </h3>
+      <p>Ayib (Ethiopian cottage cheese) served over Gomen (collard greens)</p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div>
+    <!-- <div class="card">
+      <img src="images/ " alt="Gomen with Beef">
+      <h3> </h3>
+      <p> </p>
+      <p><strong>$28</strong> per plate</p>
+      <button onclick="addToCart('Gomen with Beef (plate)',28)">Add to Cart</button>
+    </div> -->
+  </div>
 </section>
 
+<!-- CATERING TRAYS MENU -->
+<section id="menu-trays">
+  <h2>Catering Trays</h2>
+
+  <p>Each full tray serves about <strong>10 people</strong> for <strong>$100</strong>. Each half tray serves about <strong>5 people</strong> for <strong>$50</strong>.</p>
+
+  <div class="grid">
+
+    <!-- Kik Alicha tray -->
+      <div class="card">
+      <img src="images/Lentil Wat.jpeg" alt="Kik Alicha tray">
+      <h3>Kik Alicha Tray</h3>
+      <p> Mild lentil stew (vegan/fasting).</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="full" checked>
+          Full Tray - $100
+        </label>
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="half">
+          Half Tray - $50  
+        </label>
+      </div>
+
+
+      
+      <p>Number of trays:</p>
+      <input type="number" id="kik-alicha-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Kik Alicha (tray)','kik-alicha-tray',100,50)">Add to Cart</button>
+    </div>
+     <div class="card">
+      <img src="images/Red Lentil Stew (Misir Wat).jpeg" alt="Kik Alicha tray">
+      <h3>Red Lentil Stew (Misir Wat) Tray</h3>
+      <p>Vegan/fasting option made with red lentils.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="full" checked>
+          Full Tray - $100
+        </label>
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="half">
+          Half Tray - $50  
+        </label>
+      </div>
+
+
+      
+      <p>Number of trays:</p>
+      <input type="number" id="kik-alicha-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Kik Alicha (tray)','kik-alicha-tray',100,50)">Add to Cart</button>
+    </div>
+     <div class="card">
+      <img src="images/Kik Alicha.jpeg" alt="Kik Alicha tray">
+      <h3>Kik Alicha Tray</h3>
+      <p>Mild split pea stew, vegan/fasting option.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="full" checked>
+          Full Tray - $100
+        </label>
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="half">
+          Half Tray - $50  
+        </label>
+      </div>
+
+
+      
+      <p>Number of trays:</p>
+      <input type="number" id="kik-alicha-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Kik Alicha (tray)','kik-alicha-tray',100,50)">Add to Cart</button>
+    </div>
+     <div class="card">
+      <img src="images/Alicha Beef.jpeg" alt="Kik Alicha tray">
+      <h3>Alicha Beef Tray</h3>
+      <p>Tender beef cooked in a mild yellow sauce.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="full" checked>
+          Full Tray - $100
+        </label>
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="half">
+          Half Tray - $50  
+        </label>
+      </div>
+      <p>Number of trays:</p>
+      <input type="number" id="kik-alicha-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Kik Alicha (tray)','kik-alicha-tray',100,50)">Add to Cart</button>
+    </div>
+     <div class="card">
+      <img src="images/Gomen with Beef.jpeg" alt="Kik Alicha tray">
+      <h3>Gomen with Beef Tray</h3>
+      <p> Collard greens sautéed and cooked with beef..</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="full" checked>
+          Full Tray - $100
+        </label>
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="half">
+          Half Tray - $50  
+        </label>
+      </div>
+      <p>Number of trays:</p>
+      <input type="number" id="kik-alicha-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Kik Alicha (tray)','kik-alicha-tray',100,50)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Vegan Gomen.jpeg" alt="Kik Alicha tray">
+      <h3> Vegan Gomen Tray</h3>
+      <p>Collard greens cooked with spices and oil (no meat).</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="full" checked>
+          Full Tray - $100
+        </label>
+        <label>
+          <input type="radio" name="kik-alicha-tray-size" value="half">
+          Half Tray - $50  
+        </label>
+      </div>
+
+
+      
+      <p>Number of trays:</p>
+      <input type="number" id="kik-alicha-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Kik Alicha (tray)','kik-alicha-tray',100,50)">Add to Cart</button>
+    </div>
+
+    <!-- Misir Wat tray -->
+    <div class="card">
+      <img src="images/Beef Red Stew (Sega Wat).jpeg " alt="Misir Wat tray">
+      <h3> Sega Wat Tray</h3>
+      <p>Beef red stew with berbere.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="misir-wat-tray-size" value="full" checked>
+          Full Tray - $100 (10 people)
+        </label><br>
+        <label>
+          <input type="radio" name="misir-wat-tray-size" value="half">
+          Half Tray - $50 (5 people)
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="misir-wat-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Misir Wat (tray)','misir-wat-tray',100,50)">Add to Cart</button>
+    </div>
+
+    <!-- Gomen with Beef tray -->
+    <div class="card">
+      <img src="images/Vegetable Rice (2).jpeg" alt="Gomen with Beef tray">
+      <h3> Vegetable Rice Tray</h3>
+      <p>Seasoned rice cooked with carrots, onions, and mixed vegetables. Vegan option.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="gomen-beef-tray-size" value="full" checked>
+          Full Tray - $100 (10 people)
+        </label><br>
+        <label>
+          <input type="radio" name="gomen-beef-tray-size" value="half">
+          Half Tray - $50 (5 people)
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="gomen-beef-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Gomen with Beef (tray)','gomen-beef-tray',100,50)">Add to Cart</button>
+    </div>
+
+    <!-- Vegan Gomen tray -->
+    <div class="card">
+      <img src="images/Minchet (Spiced Ground Beef).jpeg" alt="Vegan Gomen tray">
+      <h3> Minchet Tray</h3>
+      <p> Spiced ground beef stew cooked with Ethiopian herbs and berbere. Served with injera.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="full" checked>
+          Full Tray - $100
+        </label><br>
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="half">
+          Half Tray - $50
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="vegan-gomen-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Vegan Gomen (tray)','vegan-gomen-tray',100,50)">Add to Cart</button>
+    </div>
+<div class="card">
+      <img src="images/Ayib with Gomen  አይብ ከጎመን.webp" alt="Vegan Gomen tray">
+      <h3> Ayib with Gomen  አይብ ከጎመን Tray</h3>
+      <p> Ayib (Ethiopian cottage cheese) served over Gomen (collard greens)</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="full" checked>
+          Full Tray - $100
+        </label><br>
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="half">
+          Half Tray - $50
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="vegan-gomen-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Vegan Gomen (tray)','vegan-gomen-tray',100,50)">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="images/Ayib (Ethiopian Fresh Cheese).jpg" alt="Vegan Gomen tray">
+      <h3> Ayib (Ethiopian Fresh Cheese) አይብ Tray</h3>
+      <p> Fresh homemade Ethiopian cottage cheese. Light, creamy, and slightly tangy.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="full" checked>
+          Full Tray - $100
+        </label><br>
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="half">
+          Half Tray - $50
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="vegan-gomen-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Vegan Gomen (tray)','vegan-gomen-tray',100,50)">Add to Cart</button>
+    </div>
+    <!-- <div class="card">
+      <img src="images/Ayib with haf.jpg" alt="Vegan Gomen tray">
+      <h3> Ayib with Gomen and Ayib Fresh Tray</h3>
+      <p> Ayib (Ethiopian cottage cheese) served over Gomen (collard greens)</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="full" checked>
+          Full Tray - $100
+        </label><br>
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="half">
+          Half Tray - $50
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="vegan-gomen-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Vegan Gomen (tray)','vegan-gomen-tray',100,50)">Add to Cart</button>
+    </div> -->
+    <!-- <div class="card">
+      <img src="images/Minchet (Spiced Ground Beef).jpeg" alt="Vegan Gomen tray">
+      <h3> Minchet Tray</h3>
+      <p> Spiced ground beef stew cooked with Ethiopian herbs and berbere. Served with injera.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="full" checked>
+          Full Tray - $100
+        </label><br>
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="half">
+          Half Tray - $50
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="vegan-gomen-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Vegan Gomen (tray)','vegan-gomen-tray',100,50)">Add to Cart</button>
+    </div> -->
+    <!-- <div class="card">
+      <img src="images/Minchet (Spiced Ground Beef).jpeg" alt="Vegan Gomen tray">
+      <h3> Minchet Tray</h3>
+      <p> Spiced ground beef stew cooked with Ethiopian herbs and berbere. Served with injera.</p>
+      <p>Full tray: $100 • ~10 people<br>Half tray: $50 • ~5 people</p>
+
+      <p>Tray size:</p>
+      <div class="price-options">
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="full" checked>
+          Full Tray - $100
+        </label><br>
+        <label>
+          <input type="radio" name="vegan-gomen-tray-size" value="half">
+          Half Tray - $50
+        </label>
+      </div>
+
+      <p>Number of trays:</p>
+      <input type="number" id="vegan-gomen-tray-qty" value="1" min="1" style="width:60px;">
+      <br><br>
+      <button onclick="addTrayItem('Vegan Gomen (tray)','vegan-gomen-tray',100,50)">Add to Cart</button>
+    </div> -->
+
+  </div>
+</section>
 <!-- ===== CART ===== -->
 
-<section id="cart">
+<!-- <section id="cart">
 <h2>Your Cart</h2>
 
 <div class="cart">
@@ -423,169 +868,369 @@ footer a:hover{color:var(--gold)}
 <button onclick="checkout()">Checkout via WhatsApp</button>
 <p>Cash App: $agelgilcatering | Zelle: 240-522-8333</p>
 </div>
-</section>
+<a href="https://cash.app/$agelgilcatering" target="_blank" class="btn">
+Pay with Cash App
+</a>
+</section> -->
+<!-- CART + CHECKOUT -->
+<section id="checkout">
+  <h2>Your Order</h2>
+  <div class="cart">
+    <div id="cartItems"></div>
+    <div class="total">
+      Total: $<span id="total">0</span>
+    </div>
+
+    <h3 style="margin-top:25px;">Checkout</h3>
+    <form id="orderForm">
+      <input type="text" id="customerName" placeholder="Full Name" required>
+      <input type="text" id="customerPhone" placeholder="Phone Number" required>
+      <input type="text" id="customerAddress" placeholder="Email" required>
+      <button type="submit">Submit Order</button>
+
+      <p style="margin-top:15px;font-size:14px;">
+        After submitting your order, please send your payment using one of the methods below:
+      </p>
+      <button onclick="checkout()">Checkout via WhatsApp</button>
+<p>Cash App: $agelgilcatering | Zelle: 240-522-8333</p>
+<a href="https://cash.app/$agelgilcatering" target="_blank" class="btn">
+Pay with Cash App
+</a>
+</div>
+
+      <!-- <ul style="font-size:14px;line-height:1.5;">
+        <a href="https://cash.app/$agelgilcatering" target="_blank" class="btn">
+Pay with Cash App
+</a> -->
+        <!-- <li>Cash App: <strong>$agelgilcatering</strong></li> -->
+        <!-- <li>Zelle: <strong>240-522-8333</strong></li> -->
+      <!-- </ul> -->
+      <!-- <p style="font-size:13px;color:#555;">
+        Please include your <strong>full name</strong> and <strong>order total</strong> in the payment note.
+      </p> -->
+    <!-- </form>
+  </div>
+</section> -->
+
 <!-- REVIEWS -->
 <section id="reviews">
-<h2>Customer Reviews</h2>
+  <h2>Customer Reviews</h2>
 
-<div class="slider">
-<div class="slides" id="slides">
+  <div class="elfsight-app-d849c705-dabb-4220-b3c3-531a6249e71c" data-elfsight-app-lazy></div>
 
-<div class="slide">
-<p>"Outstanding service and food!"</p>
-<b>- Wedding Client</b>
-</div>
-
-<div class="slide">
-<p>"Best catering in Maryland."</p>
-<b>- Corporate Event</b>
-</div>
-
-<div class="slide">
-<p>"Five-star experience."</p>
-<b>- Family Celebration</b>
-</div>
-
-</div>
-</div>
+  <a href="https://g.page/r/CZXm3IGGLRwhEAE/review" target="_blank" class="review-btn">
+    Leave Us a Review ⭐
+  </a>
 </section>
 
-<!-- ===== GALLERY ===== -->
+<!-- <section id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="slider" style="position:relative;max-width:700px;margin:auto;padding:30px 60px;">
+    <button class="prev" onclick="changeReview(-1)">❮</button>
 
+    <div class="review-container">
+      <div class="review active">
+        <p>"Outstanding service and food!"</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <b>- Wedding Client</b>
+      </div>
+
+      <div class="review">
+        <p>"Best catering in Maryland."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <b>- Corporate Event</b>
+      </div>
+
+      <div class="review">
+        <p>"Five-star experience."</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <b>- Family Celebration</b>
+      </div>
+    </div>
+
+    <button class="next" onclick="changeReview(1)">❯</button>
+
+    <div class="dots">
+      <span class="dot active" onclick="currentReview(0)"></span>
+      <span class="dot" onclick="currentReview(1)"></span>
+      <span class="dot" onclick="currentReview(2)"></span>
+      <span class="dot" onclick="currentReview(2)"></span>
+      <span class="dot" onclick="currentReview(2)"></span>
+    </div>
+  </div>
+</section> -->
+
+<!-- GALLERY -->
 <section id="gallery">
-<h2>Gallery</h2>
-
-<div class="gallery">
-<img src="images/alicha.jpg" onclick="openLightbox(this)">
-<img src="images/atkilt.jpg" onclick="openLightbox(this)">
-<img src="images/coffee.jpg" onclick="openLightbox(this)">
-<img src="images/combo.jpg" onclick="openLightbox(this)">
-<img src="images/doro.jpg" onclick="openLightbox(this)">
-<img src="images/gomen.jpg" onclick="openLightbox(this)">
-<img src="images/injera.jpg" onclick="openLightbox(this)">
-<img src="images/kik.jpg" onclick="openLightbox(this)">
-<img src="images/kitfo.jpg" onclick="openLightbox(this)">
-<img src="images/misir.jpg" onclick="openLightbox(this)">
-<img src="images/shiro.jpg" onclick="openLightbox(this)">
-<img src="images/tibs.jpg" onclick="openLightbox(this)">
-<img src="images/veggie.jpg" onclick="openLightbox(this)">
-<img src="images/tibs.jpg" onclick="openLightbox(this)">
-</div>
-
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/Alicha Beef.jpeg" onclick="openLightbox(this)">
+    <img src="images/Ayib with Gomen  አይብ ከጎመን.webp" onclick="openLightbox(this)">
+    <img src="images/coffee.jpg" onclick="openLightbox(this)">
+    <img src="images/Ayib (Ethiopian Fresh Cheese).jpg" onclick="openLightbox(this)">
+    <!-- <img src="images/Alicha Beef.jpeg" onclick="openLightbox(this)"> -->
+    <img src="images/Ayib (Ethiopian Fresh Cheese).jpg" onclick="openLightbox(this)">
+    <img src="images/Ayib with Gomen  አይብ ከጎመን.webp" onclick="openLightbox(this)">
+    <img src="images/ayib with Gomen.jpg" onclick="openLightbox(this)">
+    <img src="images/Ayib with haf.jpg" onclick="openLightbox(this)">
+    <img src="images/Beef Red Stew (Sega Wat).jpeg" onclick="openLightbox(this)">
+    <img src="images/coffee.jpg" onclick="openLightbox(this)">
+    <img src="images/download (6).jpeg "onclick="openLightbox(this)">
+    <img src="images/Gomen ketfo.jpeg" onclick="openLightbox(this)">
+    <img src="images/Gomen with Beef (2).jpeg" onclick="openLightbox(this)">
+    <img src="images/Gomen with Beef.jpeg" onclick="openLightbox(this)">
+    <img src="images/Kik Alicha.jpeg" onclick="openLightbox(this)">
+    <img src="images/Lentil Wat.jpeg" onclick="openLightbox(this)">
+    <img src="images/Minchet (Spiced Ground Beef).jpeg" onclick="openLightbox(this)">
+    <img src="images/Red Lentil Stew (Misir Wat).jpeg" onclick="openLightbox(this)">
+    <img src="images/Vegan Gomen.jpeg" onclick="openLightbox(this)">
+    <img src="images/Vegetable Rice (2).jpeg" onclick="openLightbox(this)">
+    <!-- <img src="images/Gomen with Beef.jpeg" onclick="openLightbox(this)">
+    <img src="images/Kik Alicha.jpeg" onclick="openLightbox(this)">
+    <img src="images/Minchet (Spiced Ground Beef).jpeg" onclick="openLightbox(this)">
+    <img src="images/Red Lentil Stew (Misir Wat).jpeg" onclick="openLightbox(this)">
+    <img src="images/Vegan Gomen.jpeg" onclick="openLightbox(this)">
+    <img src="images/Vegetable Rice (2).jpeg" onclick="openLightbox(this)"> -->
+  </div>
 </section>
 
-<!-- ===== VIDEOS ===== -->
-
+<!-- VIDEOS -->
 <section id="videos">
-<h2>Video Gallery</h2>
-
-<div class="video-grid">
-<video controls><source src="videos/event3.mp4"></video>
-<video controls><source src="videos/event2.mp4"></video>
-<video controls><source src="videos/event1.mp4"></video>
-</div>
-
+  <h2>Video Gallery</h2>
+  <div class="video-grid">
+    <video controls><source src="videos/event6.mp4"></video>
+    <video controls><source src="videos/event2.mp4"></video>
+    <video controls><source src="videos/event3.mp4"></video>
+    <video controls><source src="videos/event4.mp4"></video>
+    <video controls><source src="videos/event5.mp4"></video>
+    <video controls><source src="videos/event6.mp4"></video>
+    <!-- <video controls><source src="videos/event2.mp4"></video>
+    <video controls><source src="videos/event3.mp4"></video>
+    <video controls><source src="videos/event4.mp4"></video>
+    <video controls><source src="videos/event5.mp4"></video> -->
+  </div>
 </section>
+
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact</h2>
-<p>📞 240-522-8333</p>
-<p>📍1806 Metzerott Rd, Adelphi, MD 20783</p>
+  <h2>Contact</h2>
+  <p>📞 240-522-8333</p>
+  <p>📍1806 Metzerott Rd, Adelphi, MD 20783</p>
 </section>
 
-</div>
+</div><!-- /container -->
 
-<!-- ===== FOOTER ===== -->
-
-<footer>
-
-<p>Follow Us</p>
-
-<a href="https://www.facebook.com/share/17u9W9rsGk/">Facebook</a>
-<a href="https://www.instagram.com/alemworktiruneh">Instagram</a>
-<a href="https://www.youtube.com/@AGELGILCATERING">youtube</a>
-<a href="https://wa.me/2405228333">WhatsApp</a>
-<a href="https://t.me/2405228333">Telegram</a>
-
-<br><br>
-
-© 2026 AGELGIL Authentic Ethiopian Catering
-
+<!-- FOOTER -->
+<footer class="luxury-footer">
+  <section class="luxury-social">
+    <h2>Connect With Us</h2>
+    <div class="social-container">
+      <a href="https://www.facebook.com/share/17u9W9rsGk/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/alemworktiruneh" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@AGELGILCATERING" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/2405228333" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://t.me/@id698698221" target="_blank"><i class="fab fa-telegram"></i></a>
+      <!-- <a href="https://t.me/2405228333" target="_blank"><i class="fab fa-telegram"></i></a> -->
+    </div>
+  </section>
+  <div class="footer-bottom">
+    © 2026 Agelgil Authentic Ethiopian Catering. All Rights Reserved.
+  </div>
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/12405228333"
-target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/12405228333" target="_blank">WhatsApp</a>
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-<img id="lightbox-img">
+  <img id="lightbox-img">
 </div>
 
+<!-- EMAILJS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+ <!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
 
-/* HERO AUTO SLIDE */
-let slides=document.querySelectorAll(".hero-slide");
-let current=0;
+  // Replace with your own EmailJS public key if different
+  // Initialize EmailJS (ONLY public key here)
+  (function(){
+    emailjs.init("SXiiEbMhMqs_FNaVL");
+  })();
 
+  // SEND EMAIL FUNCTION
+  function sendOrder() {
+
+    // Get form values
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // Send email
+    emailjs.send("service_v44n9m4", "template_laxwgxm", {
+      from_name: name,
+      from_phone: phone,
+      from_email: email,
+      message: message
+    })
+    .then(function(response) {
+      alert("Order sent successfully!");
+    }, function(error) {
+      alert("Failed to send. Try again.");
+    });
+
+  }
+//   (function(){
+//   emailjs.init("SXiiEbMhMqs_FNaVL","template_laxwgxm",);
+// })();
+// // SEND EMAIL (match your EmailJS service/template IDs)
+  
+//   emailjs.send("service_v44n9m4","template_laxwgxm",{
+//     message: message,
+//     from_name: name,
+//     from_phone: phone,
+//     from_email: address
+//   });
+// </script>
+
+
+<script>
+  
+// HERO AUTO SLIDE
+let slides = document.querySelectorAll(".hero-slide");
+let current = 0;
 setInterval(()=>{
+  if(!slides.length) return;
   slides[current].classList.remove("active");
-  current=(current+1)%slides.length;
+  current = (current + 1) % slides.length;
   slides[current].classList.add("active");
 },4000);
 
-/* CART */
+// CART (shared)
+let cart = [];
+let total = 0;
 
-let cart=[];
-let total=0;
-
-function addToCart(name,price){
-  cart.push({name,price});
-  total+=price;
+function addToCart(name, price){
+  cart.push({name, price});
+  total += price;
   updateCart();
 }
 
 function updateCart(){
-  const cartDiv=document.getElementById("cartItems");
-  const totalSpan=document.getElementById("total");
-  cartDiv.innerHTML="";
-  cart.forEach((item,index)=>{
-    cartDiv.innerHTML+=`
-      <div>
-        ${item.name} - $${item.price}
-      </div>
-    `;
+  let cartDiv = document.getElementById("cartItems");
+  let totalSpan = document.getElementById("total");
+  cartDiv.innerHTML = "";
+  cart.forEach(item=>{
+    cartDiv.innerHTML += "<div>" + item.name + " - $" + item.price + "</div>";
   });
-  totalSpan.textContent=total;
+  totalSpan.textContent = total;
+}
+
+// Add tray item (full / half pans)
+function addTrayItem(label, key, fullPrice, halfPrice){
+  const sizeRadio = document.querySelector(`input[name="${key}-size"]:checked`);
+  if(!sizeRadio){
+    alert("Please select a size.");
+    return;
+  }
+  const qtyInput = document.getElementById(`${key}-qty`);
+  let quantity = parseInt(qtyInput.value,10);
+  if(!quantity || quantity < 1) quantity = 1;
+
+  const pricePerUnit = sizeRadio.value === "full" ? fullPrice : halfPrice;
+  const lineTotal = pricePerUnit * quantity;
+
+  addToCart(`${label} (${sizeRadio.value}) x${quantity}`, lineTotal);
 }
 
 function checkout(){
-  if(cart.length===0){
-    alert("Cart empty!");
+  if(cart.length === 0){
+    alert("Cart is empty!");
     return;
   }
 
-  let message="Hello Mesob,%0AI want to order:%0A";
+  let name = document.getElementById("customerName").value;
+  let phone = document.getElementById("customerPhone").value;
+  let address = document.getElementById("customerAddress").value;
+
+  if(!name || !phone || !address){
+    alert("Please fill all fields!");
+    return;
+  }
+
+  let message = "🛒 Hello Agelgil Authentic Ethiopian Catering:\n\n";
   cart.forEach(item=>{
-    message+=item.name+" ($"+item.price+")%0A";
+    message += item.name + " - $" + item.price + "\n";
   });
-  message+="Total: $"+total;
-  window.open("https://wa.me/12405228333?text="+message,"_blank");
+  message += "\nTotal: $" + total;
+  message += "\nName: " + name;
+  message += "\nPhone: " + phone;
+  message += "\nEmail: " + address;
+
+  // SEND EMAIL (match your EmailJS service/template IDs)
+  
+  // emailjs.send("service_v44n9m4","template_laxwgxm",{
+  //   message: message,
+  //   from_name: name,
+  //   from_phone: phone,
+  //   from_email: address
+  // });
+
+  // OPEN WHATSAPP
+  let whatsappNumber = "12405228333";
+  let url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+  window.open(url,"_blank");
+
+  // CLEAR CART
+  cart = [];
+  total = 0;
+  updateCart();
+
+  alert("Order Sent Successfully! Please complete payment via Cash App or Zelle as shown below the form.");
 }
 
-/* LIGHTBOX */
+// FORM SUBMIT
+document.getElementById("orderForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  checkout();
+});
 
+// LIGHTBOX
 function openLightbox(img){
   document.getElementById("lightbox").style.display="flex";
   document.getElementById("lightbox-img").src=img.src;
 }
-
 function closeLightbox(){
   document.getElementById("lightbox").style.display="none";
 }
 
+// REVIEWS SLIDER
+let reviewIndex = 0;
+const reviews = document.querySelectorAll(".review");
+const dots = document.querySelectorAll(".dot");
+
+function showReview(index){
+  reviews.forEach(r => r.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+  reviews[index].classList.add("active");
+  dots[index].classList.add("active");
+  reviewIndex = index;
+}
+function changeReview(step){
+  let newIndex = reviewIndex + step;
+  if(newIndex >= reviews.length) newIndex = 0;
+  if(newIndex < 0) newIndex = reviews.length - 1;
+  showReview(newIndex);
+}
+function currentReview(index){
+  showReview(index);
+}
+setInterval(function(){
+  if(reviews.length) changeReview(1);
+}, 5000);
+
 </script>
-
+<script src="https://elfsightcdn.com/platform.js" async></script>
 </body>
-
 </html>
+
